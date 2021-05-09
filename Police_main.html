@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<div class="page-wrapper">
+<html>
+<head>
+<title>Police Killings in Relation to Education and Unemployment</title>
+</head>
+<body>
+<div class="preamble" role="article">
+<h1>Police Brutality</h1>
+
+<p> Police brutality cases have been on the front pages of the news for an unsettling amount of time
+and a focus point for many activist groups. Police brutality refers to the excessive or unwarranted
+use of force on a person by a police officer <a href="https://www.britannica.com/topic/Police-Brutality-in-the-United-States-2064580">(Moore, Police brutality in the United States)</a>.
+Last year in 2020, brutality cases increased although we were in the middle of a pandemic
+<a href="https://www.washingtonpost.com/graphics/investigations/police-shootings-database/">(Fatal force: Police shootings database)</a>.
+This increase, along with various tragic cases, instigated large protests throughout the country advocating for
+reform and fair trials against the perpetrators. The reasons for high police brutality rates are still debated,
+however. The purpose for this research is to study particular socioeconomic factors that may have a relationship with police brutality rates.
+I visualized education, unemployment, and population rates of an area and overlayed it with police brutality cases. This reasearch is a first step to better understanding
+the root causes of the problem.</p>
+
+<h2>Data Gathering and Cleaning</h2>
+<p>This work explores the relationship between the frequency of police killings, education, unemployment, and population per county, and how this has changed from 2015-2019.
+  I am using a dataset that includes every instance of police killing civilians from 2015 to April 24th, 2021
+  <a href="https://www.washingtonpost.com/graphics/investigations/police-shootings-database/">(Fatal force: Police shootings database)</a>,
+  data on highest level of education from 2015-2019 <a href= "https://www.ers.usda.gov/data-products/county-level-data-sets/">(USDA, County-level Data Sets)</a>,
+  unemployment (USDA, County-level Data Sets), and population data per county
+  <a href= "https://www.census.gov/data/datasets/time-series/demo/popest/2010s-counties-total.html">(USDA, County Population Totals: 2010-2019)</a>.
+  I was not able to find education data per county for each individual year as I did with the unemployment data,
+  so I overlayed this data with the police brutality cases for those years together rather than separately</p>
+<p> The data sets are relatively clean, I removed null values and ignored the police killings for years
+  that I did not have education or unemployment data (2020 and 2021). I divided the unemployment numbers by their
+  respective county population to get a more accurate representation of unemployment percentages.
+  The education data contains the percentage of adults with less than a high school diploma and the percent of adults with a bachelor's
+  degree or higher. I did not melt
+  the datasets together because the visualizations consist of various layered choropleth maps showing unemployment,
+  education, and population per county and then mapping where each police brutality incidence occurred. The dataset
+  of police killings includes exact latitude and longitude coordinates of the incidences which I used to map them.</p>
+
+<h2>Purpose of the current work</h2>
+<p>The purpose of this study is to find a relationship between social class
+  indicators and police brutality. More research needs to be done to demonstrate
+  the causes and effects of such violence, which disrupts the relationship between
+   a social group and law enforcement. Understanding the causes and effects help
+   lead to tangible solutions. </p>
+
+<h2>Findings</h2>
+<p>Use the links in the menu bar to view the map visualizations.</p>
+<p> The unemployment map does not show a very clear pattern between the frequency
+  of police killings, unemployment, or education rates. Most brutality cases are
+  around the East and West coast – meaning areas with denser population rates.
+  Although most cases are on or around higher unemployment rates, there does not
+  seem to be a high correlation between them. Furthermore, police killings seem to
+  be slightly more correlated with higher education levels. This could be because
+  these areas tend to be more urban and have higher population numbers. To develop
+  this idea further, I also mapped population with a log base 10 and police brutality incidences.
+  This map demonstrates that even over time, most brutality cases are in counties with higher population numbers.
+  I speculate this could be because there are more police to commit the crime and/or more cases that lead a police
+  officer to resort to an unwarranted amount of force against a subject.
+  Nevertheless, it is important to note the similarities in brutality “hotspots”
+  between years. These show a deeper systemic pattern that has shaped police violence
+   in the United States.</p>
+
+<h2>Going Forward</h2>
+<p> Understanding the root causes for police violence “hotspots” that the maps
+  depict is crucial to reverting systemic trends. The hotspots demonstrate that
+  police violence cases are not exceptions, and therefore can be understood with
+  further research as to what contributed to these brutality clusters.</p>
+<p>Going further in the study of police brutality, it might be insightful
+  to focus on metro areas and their surrounding suburbs, where brutality cases
+  have been on the rise
+  <a href= "https://fivethirtyeight.com/features/police-are-killing-fewer-people-in-big-cities-but-more-in-suburban-and-rural-america/">(Police Are Killing Fewer People In Big Cities, But More In Suburban And Rural America)</a>.
+  Furthermore, to address racial discriminatory undertones in systemic police
+  violence, it would be useful to visualize the frequency of brutality occurrences
+  and the racial composition of areas. </p>
+<p>Police violence is not a new problem in the United States.
+  It is important to continue research on the roots and effects this has
+   not only on specific social and racial groups, but also for society as a whole. </p>
+
+<aside class="sidebar" role="complementary">
+		<div class="wrapper">
+				<h3>View Maps & Data:</h3>
+				<nav role="navigation">
+					<ul>
+					<li>
+						<a href="unemployment.html">Unemployment map</a>
+					</li>					<li>
+						<a href="education.html">Education map</a>
+					</li>					<li>
+						<a href="population.html">Population (log) map</a>
+          </li>					<li>
+            <a href="Bibliography.html">Bibliography</a>
+				</ul>
+				</nav>
+			</div>
+</body>
+</html>
